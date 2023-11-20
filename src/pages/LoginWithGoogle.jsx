@@ -19,8 +19,8 @@ const LoginWithGoogle = () => {
   return (
     <div>
       <form method="GET">
-        <button onClick={action}>Login with google</button>
-        <a href="http://localhost:8080/api/v1/auth/google">Login now</a>
+        {/* <button onClick={action}>Login with google</button> */}
+        <a href="http://localhost:8080/api/v1/auth/google">Login with google</a>
       </form>
     </div>
   );
