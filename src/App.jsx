@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 import "./App.css";
 
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Completelogin from "./pages/completelogin";
 import Dashbord from "./pages/Dashbord";
 import LoginWithGoogle from "./pages/LoginWithGoogle";
