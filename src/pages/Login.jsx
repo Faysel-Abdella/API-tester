@@ -8,14 +8,17 @@ export const action = async ({ request }) => {
   const data = Object.fromEntries(formData);
 
   try {
-    fetch("http://localhost:8080/api/v1/auth/complete-login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-      credentials: "include",
-    });
+    fetch(
+      "https://bag6xc5pd2.us-east-1.awsapprunner.com/api/v1/auth/complete-login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+        credentials: "include",
+      }
+    );
   } catch (error) {
     console.log(error);
 
