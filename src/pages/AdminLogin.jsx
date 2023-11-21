@@ -8,7 +8,8 @@ export const action = async ({ request }) => {
 
   try {
     fetch(
-      "https://bag6xc5pd2.us-east-1.awsapprunner.com/api/v1/auth/admin-login",
+      // "https://bag6xc5pd2.us-east-1.awsapprunner.com/api/v1/auth/admin-login",
+      "http://localhost:8080/api/v1/auth/admin-login",
       {
         method: "POST",
         headers: {
@@ -23,7 +24,7 @@ export const action = async ({ request }) => {
 
     return error;
   }
-  return redirect("/dashboard");
+  return redirect("/");
 };
 
 const AdminLogin = () => {
