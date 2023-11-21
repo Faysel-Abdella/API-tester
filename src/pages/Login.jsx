@@ -9,7 +9,7 @@ export const action = async ({ request }) => {
 
   try {
     fetch(
-      "https://bag6xc5pd2.us-east-1.awsapprunner.com/api/v1/auth/complete-login",
+      "https://bag6xc5pd2.us-east-1.awsapprunner.com/api/v1/auth/complete-register",
       {
         method: "POST",
         headers: {
